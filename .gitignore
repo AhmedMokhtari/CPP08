@@ -1,4 +1,4 @@
 *.o
 .vscode
-test.cpp
-test
+ex02/test.cpp
+ex02/test
