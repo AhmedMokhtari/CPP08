@@ -13,6 +13,13 @@ int main()
     a.push_back(5);
     a.push_back(6);
 
-    easyfind(a, 5);
+    try{
+         std::list<int>::iterator b = easyfind(a, 566);
+        std::cout << *b << std::endl;
+    }catch (const std::exception &e)
+    {
+        std::cout << e.what();
+    }
+
     return 0;
 }
