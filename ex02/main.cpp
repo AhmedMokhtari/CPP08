@@ -35,6 +35,7 @@
 
 int main()
 {
+    std::cout << "-------------- Int -------------\n";
     MutantStack<int> mstack;
     mstack.push(5);
     mstack.push(17);
@@ -56,6 +57,18 @@ int main()
         std::cout << *it << std::endl;
         ++it;
     }
+    std::cout << "-------------- string -------------\n";
+    MutantStack<std::string> mystr;
+    mystr.push("Alo ");
+    mystr.push("test1 ");
+    mystr.push("test2 ");
+    mystr.push("test3 ");
+
+
+    MutantStack<std::string>::iterator it1 ;
+
+    for (it1 = mystr.begin(); it1 != mystr.end(); it1++)
+        std::cout << *it1 << std::endl;
     std::stack<int> s(mstack);
     return 0;
 }
